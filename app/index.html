@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23ff2d78'/%3E%3Ctext x='8' y='12' font-size='11' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="site-head">
+  <div class="head-inner">
+    <div>
+      <h1>LEONIDA TROPHY GUIDE</h1>
+      <p class="subtitle">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; 1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; all offline, all single-player</p>
+    </div>
+    <div class="progress-wrap" id="progress-wrap">
+      <div class="progress-line"><strong id="progress-count">0 / 55 earned</strong><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="grade-line" id="grade-line"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Tracker controls">
+    <input id="search" type="search" placeholder="Search trophies by name or description…" autocomplete="off">
+    <div class="chips" id="filter-chips" role="group" aria-label="Filter by kind"></div>
+    <label class="spoiler-toggle"><input type="checkbox" id="spoiler" checked> Hide story spoilers</label>
+    <div class="file-actions">
+      <button id="export-btn" type="button">Export progress</button>
+      <button id="import-btn" type="button">Import progress</button>
+      <input id="import-file" type="file" accept="application/json,.json" hidden>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
+    <p class="toolbar-note" id="filter-note"></p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-intro">About 200 hours, one playthrough, difficulty 4/10 (PowerPyx). Cheats disable trophies and saving, so keep them off. There is no mission replay, so keep a save at the start and end of each chapter. The only trophy that can be missed is flagged below.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <div class="columns">
+    <section class="checklist" aria-label="Trophy checklist">
+      <h2 id="list-heading">Checklist</h2>
+      <ul class="trophy-list" id="trophy-list"></ul>
+      <p class="empty-note" id="empty-note" hidden>No trophies match this filter.</p>
+    </section>
+
+    <aside class="detail" id="detail" aria-label="Trophy guide">
+      <h2>Guide</h2>
+      <div id="detail-body">
+        <p class="detail-empty">Select a trophy on the left to read its guide, what to do, where, and when it can be missed — with its sources.</p>
+      </div>
+    </section>
+  </div>
+
+  <section class="missables" id="missables" aria-label="Missable trophies">
+    <h2>Missable trophies</h2>
+    <p>Only one trophy in the whole list is reported as possibly missable: <strong>Positive Mental Attitude</strong> — the Chapter 1 meditation at Jason&rsquo;s house. After the mission Down to Earth, talk to Lucia in the kitchen in the morning, follow her to the balcony and accept when she offers to show you how to meditate. Everything else, story trophies included, can be earned after the story in free-roam. <span class="cite">Source: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap.</span></p>
+  </section>
+
+  <section class="sources" aria-label="Sources">
+    <h2>Sources</h2>
+    <p>Every guide in this app is written in its own words for this guide. Its facts come from the guides below — name or link beside each trophy — and the trophy names, descriptions and grades are shown as PlayStation publishes them.</p>
+    <ul id="source-list"></ul>
+    <p class="offline-note">This app works fully offline: every file it loads is a file in this folder, and it makes no network request. A source link opens only if you follow it.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an independent, unofficial fan guide. Not affiliated with Rockstar Games or Sony Interactive Entertainment. No Rockstar logo or official artwork is used. MIT licensed.</p>
+</footer>
+</body>
+</html>
